@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/correcto2"
+    tools:context=".CorrectoActivity">
+
+    <Button
+        android:id="@+id/button_salir"
+        android:layout_width="126dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="44dp"
+        android:background="@android:color/transparent"
+        android:onClick="toInicio"
+        android:text=""
+        android:textColor="#B68B0A"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921" />
+
+    <Button
+        android:id="@+id/button_continuar"
+        android:layout_width="185dp"
+        android:layout_height="57dp"
+        android:background="@android:color/transparent"
+        android:onClick="toContinuar"
+        android:text=""
+        android:textColor="#B68B0A"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_salir"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
+</androidx.constraintlayout.widget.ConstraintLayout>
