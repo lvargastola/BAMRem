@@ -28,16 +28,8 @@ public class VideoRepActivity extends AppCompatActivity {
         Op4=findViewById(R.id.checkBox_Op4);
 
         videoView = (VideoView) findViewById(R.id.videoRep); //Se asigna la variable al objeto
-        //videoView.setVideoURI(Uri.parse("android.resources//" + getPackageName() + "/" +R.raw.videomastermensaje));
-        //MediaController mediaController = new MediaController(this);//Se crea el media Controller
-        //mediaController.setAnchorView(videoView);
-
-        //Uri uri = Uri.parse("C:\\Users\\Luis Vargas Tola\\Documents\\Master Creación y Gestión de Empresas\\Gestión de Proyectos\\VideoMasterMensaje");
-        //Uri uri = Uri.parse("https://techslides.com/demos/samples/sample.mp4"); //Se genera el link al contenido a reproducir
         Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.videomastermensajeand);
         videoView.setVideoURI(uri);
-        //videoView.setMediaController(mediaController);
-        //videoView.requestFocus();
         videoView.start();
     }
 
